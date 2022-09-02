@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>告警 | Infomover 帮助文档</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css">
+    <meta name="description" content="Infomover功能说明以及使用过程中遇到的问题解答">
+    
+    <link rel="preload" href="/help/assets/css/0.styles.5932944c.css" as="style"><link rel="preload" href="/help/assets/js/app.0f366fef.js" as="script"><link rel="preload" href="/help/assets/js/2.4c34d73e.js" as="script"><link rel="preload" href="/help/assets/js/14.da4cdf49.js" as="script"><link rel="prefetch" href="/help/assets/js/10.aca0cb44.js"><link rel="prefetch" href="/help/assets/js/11.98c4167f.js"><link rel="prefetch" href="/help/assets/js/12.e7043ec7.js"><link rel="prefetch" href="/help/assets/js/13.c85e502e.js"><link rel="prefetch" href="/help/assets/js/15.0caa3228.js"><link rel="prefetch" href="/help/assets/js/16.d5314189.js"><link rel="prefetch" href="/help/assets/js/17.cc620383.js"><link rel="prefetch" href="/help/assets/js/18.4ec05b65.js"><link rel="prefetch" href="/help/assets/js/19.3af197bc.js"><link rel="prefetch" href="/help/assets/js/3.2802b4fd.js"><link rel="prefetch" href="/help/assets/js/4.8aeb52e3.js"><link rel="prefetch" href="/help/assets/js/5.27e6d2ad.js"><link rel="prefetch" href="/help/assets/js/6.ea710b26.js"><link rel="prefetch" href="/help/assets/js/7.c7e2bfaf.js"><link rel="prefetch" href="/help/assets/js/8.ad237d01.js"><link rel="prefetch" href="/help/assets/js/9.736391dc.js">
+    <link rel="stylesheet" href="/help/assets/css/0.styles.5932944c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/help/" class="home-link router-link-active"><!----> <span class="site-name">Infomover 帮助文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>目录结构</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/help/1概述和登录页.html" class="sidebar-link">系统功能概述</a></li><li><a href="/help/2数据源—新建数据源.html" class="sidebar-link">数据源</a></li><li><a href="/help/3删除数据源.html" class="sidebar-link">删除数据源</a></li><li><a href="/help/4任务列表.html" class="sidebar-link">任务</a></li><li><a href="/help/5告警.html" class="active sidebar-link">告警</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/help/5告警.html#告警规则" class="sidebar-link">告警规则</a></li><li class="sidebar-sub-header"><a href="/help/5告警.html#告警列表" class="sidebar-link">告警列表</a></li></ul></li><li><a href="/help/6集群管理.html" class="sidebar-link">集群</a></li><li><a href="/help/7用户管理.html" class="sidebar-link">用户管理</a></li><li><a href="/help/8任务参数说明.html" class="sidebar-link">任务参数说明</a></li><li><a href="/help/9源端数据库对接说明.html" class="sidebar-link">源端数据库对接说明</a></li><li><a href="/help/10目标端数据库对接说明.html" class="sidebar-link">目标端数据库对接授权说明</a></li><li><a href="/help/11KAFKA授权对接说明.html" class="sidebar-link">Kafka集群对接授权操作</a></li><li><a href="/help/12问题解决方案.html" class="sidebar-link">问题解决方案</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="告警"><a href="#告警" class="header-anchor">#</a> 告警</h1> <h2 id="告警规则"><a href="#告警规则" class="header-anchor">#</a> 告警规则</h2> <p>告警规则目前为系统内置。</p> <p>ClusterNodeDown：Kafka集群中的Connector节点宕机超过5分钟。</p> <p>NO_DATA_KAFKA_SINK：Kafka Sink端 5分钟没有数据处理。</p> <p>RUN_FAILED：在Kafka集群中运行失败超过5分钟。</p> <p>NO_DATA_READ：源端5分钟没有数据处理。</p> <p>NO_DATA_JDBC_SINK：JDBC Sink端5分钟没有数据处理。</p> <p><img src="db1ed6829017daddb78609737fd63cf6.png" alt=""></p> <h2 id="告警列表"><a href="#告警列表" class="header-anchor">#</a> 告警列表</h2> <p>根据告警规则监控产生的告警，类型包含“集群”和“任务”，</p> <p>选择“集群”类型，可查看告警规则、描述、集群、状态等信息，可对告警状态标记为“解决”或“忽略”。</p> <p><img src="b26a751c1357bd564c99b62112722637.png" alt=""></p> <p>选择“任务”类型，可查看告警规则、描述、任务名称、连接器、类别等信息，可对告警状态标记为“解决”或“忽略”。</p> <p><img src="472723ca994987e1f4ddb24846ff8230.png" alt=""></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/help/4任务列表.html" class="prev">
+        任务
+      </a></span> <span class="next"><a href="/help/6集群管理.html">
+        集群
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/help/assets/js/app.0f366fef.js" defer></script><script src="/help/assets/js/2.4c34d73e.js" defer></script><script src="/help/assets/js/14.da4cdf49.js" defer></script>
+  </body>
+</html>
